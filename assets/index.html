@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Schedule</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+    <style>
+        .jumbotron {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <div class="jumbotron jumbotron-fluid text-light bg-dark">
+                    <div class="container">
+                        <h1 class="display-4 jumbotronHeader">Anytime is Train Time</h1>
+                        <p class="lead jumboP">Chee Chee. Choo Choo.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header text-light bg-dark">
+                        Current Train Schedule
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-hover">
+                            <tr>
+                                <th>Train Name</th>
+                                <th>Destination</th>
+                                <th>Frequency (min)</th>
+                                <th>Next Arrival</th>
+                                <th>Minutes Away</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            
+                        </table>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card addEmployeeCard">
+                    <div class="card-header text-light bg-dark">
+                        Add Train
+                    </div>
+                    <div class="card-body" id="cardId">
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Train Name</label>
+                                <input type="text" class="form-control" id="train-name" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Destination</label>
+                                <input type="text" class="form-control" id="destination" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">First Train Time HH:mm (military time)</label>
+                                <input type="text" class="form-control" id="train-time" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Frequency (mins)</label>
+                                <input type="text" class="form-control" id="frequency2" placeholder="">
+                            </div>
+                        </form>
+                        <button type="submit" class="btn text-light bg-dark">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
